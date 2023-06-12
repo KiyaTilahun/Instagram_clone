@@ -4,9 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <img src="images/kiya.jpg" alt="" class="rounded-circle">
+            <img src="images/kiya.jpg" alt="" class="rounded-circle w-100">
         </div>
-        <div class="col-9">
+        <div class="col-9 ps-5 pt-4">
             <div>
                 <h1>kiya_tilahun_lemmi</h1>
             </div>
