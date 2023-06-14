@@ -4,11 +4,11 @@
 <div class="container">
     <div class="row">
         <div class="col-3 p-5">
-            <img src="images/kiya.jpg" alt="" class="rounded-circle w-100">
+            <img src="{{ asset('images/kiya.jpg') }}" alt="" class="rounded-circle w-100">
         </div>
         <div class="col-9 ps-5 pt-4">
             <div>
-                <h1>kiya_tilahun_lemmi</h1>
+                <h1>{{ $user['username']}}</h1>
             </div>
             <div class="d-flex ">
                 <div class="pe-5"><strong>0</strong> posts</div>
@@ -23,14 +23,14 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4"><img src="images/insta1.jpg" alt="" class="w-100"></div>
-            <div class="col-4"><img src="images/insta1.jpg" alt="" class="w-100"></div>
-            <div class="col-4"><img src="images/insta1.jpg" alt="" class="w-100"></div>
+            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
+            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
+            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
         </div>
          <div class="row">
-            <div class="col-4"><img src="images/image-1.jpg" alt="" class="w-100 pt-5"></div>
-            <div class="col-4 pt-5"><img src="images/image-2.jpg" alt="" class="w-100"></div>
-            <div class="col-4 pt-5"><img src="images/image-3.jpg" alt="" class="w-100"></div>
+            <div class="col-4"><img src="{{ asset('images/image-1.jpg') }}" alt="" class="w-100 pt-5"></div>
+            <div class="col-4 pt-5"><img src="{{ asset('images/image-2.jpg') }}" alt="" class="w-100"></div>
+            <div class="col-4 pt-5"><img src="{{ asset('images/image-3.jpg') }}" alt="" class="w-100"></div>
         </div>
     </div>
 </div>
