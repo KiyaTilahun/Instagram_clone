@@ -16,10 +16,10 @@
                 <div class="pe-5"><strong>100</strong> following</div>
             </div>
             <div class="fw-bold">
-                <div>kiya _tilahun_lemmi</div>
-                <div>መወለድ ቋንቋ ነው</div>
-                <div>🇪🇹Proud Ethiopian</div>
-                <div><a href="mailto:=kiyatilahun0@gmail.com">Send Email</a></div>
+            <!-- መወለድ ቋንቋ ነው< -->
+            <div class="pt-3"><strong>{{ $user->profile['title'] }}</strong></div>
+            <div>{{  $user->profile['title'] }}</div>
+            <div><a href="#">{{  $user->profile['title'] }}</a></div>
             </div>
         </div>
         <div class="row">
