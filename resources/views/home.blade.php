@@ -7,8 +7,9 @@
             <img src="{{ asset('images/kiya.jpg') }}" alt="" class="rounded-circle w-100">
         </div>
         <div class="col-9 ps-5 pt-4">
-            <div>
+            <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user['username']}}</h1>
+                <a href="">Add new Post</a>
             </div>
             <div class="d-flex ">
                 <div class="pe-5"><strong>0</strong> posts</div>
@@ -17,9 +18,9 @@
             </div>
             <div class="fw-bold">
             <!-- መወለድ ቋንቋ ነው< -->
-            <div class="pt-3"><strong>{{ $user->profile['title'] }}</strong></div>
-            <div>{{  $user->profile['title'] }}</div>
-            <div><a href="#">{{  $user->profile['title'] }}</a></div>
+            <div class="pt-3"><strong>{{ $user->profile->title }}</strong></div>
+            <div>{{  $user->profile['description'] }}</div>
+            <div><a href="#">{{  $user->profile['url'] }}</a></div>
             </div>
         </div>
         <div class="row">
