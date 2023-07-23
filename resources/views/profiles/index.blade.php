@@ -9,7 +9,7 @@
         <div class="col-9 ps-5 pt-4">
             <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user['username']}}</h1>
-                <a href="">Add new Post</a>
+                <a href="/p/create">Add new Post</a>
             </div>
             <div class="d-flex ">
                 <div class="pe-5"><strong>0</strong> posts</div>
@@ -23,16 +23,13 @@
             <div><a href="#">{{  $user->profile['url'] }}</a></div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
-            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
-            <div class="col-4"><img src="{{ asset('images/insta1.jpg') }}" alt="" class="w-100"></div>
+        <div class="row pt-4">
+            @foreach($user->posts as $posts)
+            <div class="col-4"><img src="/storage/{{ $posts->image }}" alt="" class="w-100"></div>
+           
+            @endforeach
         </div>
-         <div class="row">
-            <div class="col-4"><img src="{{ asset('images/image-1.jpg') }}" alt="" class="w-100 pt-5"></div>
-            <div class="col-4 pt-5"><img src="{{ asset('images/image-2.jpg') }}" alt="" class="w-100"></div>
-            <div class="col-4 pt-5"><img src="{{ asset('images/image-3.jpg') }}" alt="" class="w-100"></div>
-        </div>
+        
     </div>
 </div>
 @endsection

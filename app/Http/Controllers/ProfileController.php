@@ -13,7 +13,7 @@ class ProfileController extends Controller
        $user=User::findOrFail($user);
     //    $profile=Profile::find($user[''])
         // return view('home',['user'=>$user]);
-        return view('home',compact('user'));
+        return view('profiles.index',compact('user'));
 
     }
 }
