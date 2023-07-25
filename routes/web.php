@@ -23,5 +23,11 @@ Auth::routes();
 Route::get('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'index']);
 Route::get('p/create', [App\Http\Controllers\PostController::class, 'create']);
 Route::post('/p', [App\Http\Controllers\PostController::class, 'store']);
+Route::get('/p/{posts}', [App\Http\Controllers\PostController::class, 'show'])->name('profile.show');
+Route::get('/profile/{user}/edit', [App\Http\Controllers\ProfileController::class, 'edit'])->name('profile.edit');
+Route::patch('/profile/{user}', [App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
+
+
+
 
 
